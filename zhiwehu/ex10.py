@@ -1,8 +1,3 @@
-sentence = input().split()
-result = []
+sentence = set(input().split())
 
-for word in sentence:
-    if not word in result:
-        result.append(word)
-
-print(' '.join(sorted(result)))
+print(' '.join(sorted(sentence)))
